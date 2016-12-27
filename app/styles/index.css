@@ -1,0 +1,165 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Microsoft YaHei";
+}
+.container {
+  width: 100%;
+  height: 100%;
+  background-color: #eee;
+}
+section,
+footer {
+  width: 100%;
+}
+section {
+  height: 7rem;
+  padding-top: .3rem;
+}
+section .row {
+  display: -moz-box;
+  display: -webkit-box;
+  display: -ms-box;
+  display: -o-box;
+  display: box;
+  -moz-box-align: center;
+  -webkit-box-align: center;
+  -ms-box-align: center;
+  -o-box-align: center;
+  box-align: center;
+  margin: 0 auto;
+  width: 90%;
+  height: 1rem;
+}
+section .row_1 .left {
+  width: 1rem;
+  height: 1rem;
+  padding: .1rem;
+  background-color: #fff;
+  border-radius: .1rem;
+}
+section .row_1 .left .home {
+  width: 100%;
+  height: 100%;
+  background: url("../images/home.png") no-repeat center center;
+  background-size: 100%;
+}
+section .row_1 .right {
+  height: 1rem;
+  width: 70%;
+  padding: .1rem .1rem .1rem .2rem;
+}
+section .row_1 .right .p1 {
+  font-size: .3rem;
+  color: #333;
+}
+section .row_1 .right .p2 {
+  font-size: .24rem;
+  color: #999;
+}
+section .row_2 {
+  position: relative;
+  margin-top: .2rem;
+}
+section .row_2 p {
+  color: #666;
+  position: absolute;
+  left: .3rem;
+  top: .3rem;
+  font-size: .28rem;
+}
+section .row_2 .full {
+  border: 1px solid #c1c1c1;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: .06rem;
+  text-align: right;
+  padding: 0 .3rem 0 1rem;
+  font-family: "Microsoft YaHei UI";
+  font-size: .48rem;
+  background-color: #ffffff;
+}
+section .row_2 .full:focus {
+  outline: none;
+}
+section .row_3 {
+  text-align: center;
+}
+section .row_3 hr {
+  background-color: #999;
+  border: 0;
+  width: .9rem;
+  height: 1px;
+}
+section .row_3 p {
+  color: #999;
+  font-size: .24rem;
+  padding-left: .01rem;
+  padding-right: .05rem;
+  letter-spacing: .005rem;
+}
+footer {
+  position: absolute;
+  bottom: 0;
+}
+footer .table {
+  position: relative;
+  display: table;
+  border-collapse: collapse;
+  width: 100%;
+}
+footer .table-row-group {
+  display: table-row-group;
+  float: left;
+}
+footer .table-row {
+  display: table-row;
+}
+footer .table-cell,
+footer .sure {
+  border: 1px solid #d1d1d1;
+  display: table-cell;
+  padding: 0 5px;
+  vertical-align: middle;
+  text-align: center;
+  width: 1.6rem;
+  font-size: .48rem;
+}
+footer .table-cell {
+  height: 1.2rem;
+  background-color: #fff;
+}
+footer .table-cell:hover {
+  background-color: #ebebeb;
+}
+footer .sure {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 3.6rem;
+  padding-top: 1.2rem;
+  color: #ffffff;
+  border: none;
+}
+footer .sure p {
+  font-size: 0.42rem;
+}
+footer .active {
+  background-color: #f9800f;
+}
+footer .active:hover {
+  background-color: #D56E0D;
+}
+footer .minus {
+  background: url("../images/minus.png") no-repeat center center;
+  background-size: 50%;
+  background-color: #fff;
+}
+footer .down {
+  background: url("../images/down.png") no-repeat center center;
+  background-size: 30%;
+}

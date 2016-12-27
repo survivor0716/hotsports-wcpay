@@ -1,0 +1,121 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+  <!-- build:css(.) styles/vendor.css -->
+  <!-- bower:css -->
+  <!-- endbower -->
+  <!-- endbuild -->
+  <!-- build:css(.tmp) styles/main.css -->
+  <link rel="stylesheet" href="styles/index.css">
+  <!-- endbuild -->
+  <style>
+    html {
+      font-size: 100px;
+    }
+  </style>
+</head>
+<body ng-app="hotsportsWcpayApp" ng-controller="ApplicationctrlCtrl">
+<!--[if lte IE 8]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+  your browser</a> to improve your experience.</p>
+<![endif]-->
+
+<!-- Add your site or application content here -->
+<div id="container" class="container">
+  <section>
+    <div class="row row_1">
+      <div class="left">
+        <p class="home"></p>
+      </div>
+      <div class="right">
+        <p class="p1">场馆名称</p>
+        <p class="p2">热动合作商户</p>
+      </div>
+    </div>
+    <div class="row row_2">
+      <p>金额</p>
+      <div class="full">{{total_amount}}</div>
+    </div>
+    <div class="row row_3">
+      <hr>
+      <p>热动HotSports · 让生活重新动起来</p>
+      <hr>
+    </div>
+  </section>
+  <footer>
+    <div class="table">
+      <div class="table-row-group left">
+        <ul class="table-row">
+          <li class="table-cell">1</li>
+          <li class="table-cell">2</li>
+          <li class="table-cell">3</li>
+          <li class="table-cell minus"></li>
+        </ul>
+        <ul class="table-row">
+          <li class="table-cell">4</li>
+          <li class="table-cell">5</li>
+          <li class="table-cell">6</li>
+        </ul>
+        <ul class="table-row">
+          <li class="table-cell">7</li>
+          <li class="table-cell">8</li>
+          <li class="table-cell">9</li>
+        </ul>
+        <ul class="table-row">
+          <li class="table-cell down"></li>
+          <li class="table-cell">0</li>
+          <li class="table-cell">.</li>
+        </ul>
+      </div>
+      <div class="sure active"><p>确认</p><p>支付</p></div>
+    </div>
+  </footer>
+</div>
+<script>
+  (function (doc, win) {
+    var docEl = doc.documentElement,
+        resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+        recalc = function () {
+          var clientWidth = docEl.clientWidth;
+          if (!clientWidth) return;
+          docEl.style.fontSize = 100 * (clientWidth / 640) + 'px';
+        };
+
+    if (!doc.addEventListener) return;
+    win.addEventListener(resizeEvt, recalc, false);
+    doc.addEventListener('DOMContentLoaded', recalc, false);
+  })(document, window);
+  /*    var container = document.getElementById('container');
+   window.onload = window.onresize = function () {
+   //TODO:改高
+   var clientHeight = document.documentElement.clientHeight;
+   container.style.height = clientHeight + 'px';
+   }*/
+</script>
+
+<!-- build:js(.) scripts/vendor.js -->
+<!-- bower:js -->
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+<script src="bower_components/angular-animate/angular-animate.js"></script>
+<script src="bower_components/angular-cookies/angular-cookies.js"></script>
+<script src="bower_components/angular-resource/angular-resource.js"></script>
+<script src="bower_components/angular-route/angular-route.js"></script>
+<script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+<script src="bower_components/angular-touch/angular-touch.js"></script>
+<!-- endbower -->
+<!-- endbuild -->
+
+<!-- build:js({.tmp,app}) scripts/scripts.js -->
+<script src="scripts/app.js"></script>
+<script src="scripts/controllers/main.js"></script>
+<script src="scripts/controllers/application.js"></script>
+<!-- endbuild -->
+</body>
+</html>
